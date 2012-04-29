@@ -1,0 +1,134 @@
+blockquote {
+    font-style: italic;
+}
+
+blockquote > p {
+    font-style: italic;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+.page-content {
+    clear: both;
+}
+
+time {
+    float: right;
+    margin: 5px;
+    text-decoration: none;
+    font-weight: normal;
+    font-style: italic;
+    text-align: center;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    padding-left: 9px;
+    padding-right: 9px;
+    background-color: #fafafa;
+    color: #222;
+    font-size: 0.9em;
+    border-radius: 2em;
+    box-shadow: 2px 2px 4px #ddd;
+    line-height: 1.2em;
+    clear: both;
+}
+
+.socialised {
+    display: inline-block;
+    width: 120px;
+}
+
+.socialised > .FlattrButton {
+    display: inline-block;
+    width: 120px;
+}
+
+.post-summary p {
+    font-style: italic;
+    font-size: 0.9em;
+}
+
+.context-nav {
+    height: 3em;
+}
+
+.context-nav-prev {
+    float: left;
+}
+
+.context-nav-next {
+    float: right;
+}
+
+h1, #projects > h2, #projects > h3 {
+    clear: both;
+}
+
+.page-content img, .page-content video {
+    display: block;
+    width: auto;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.project-logo {
+    float: right;
+    padding-left: 10px;
+    padding-bottom: 10px;
+    max-width: 140px;
+    max-height: 60px;
+    clear: both;
+}
+
+.social {
+    width: auto;
+    margin-left: 20px;
+    margin-bottom: 10px;
+    margin-top: 30px;
+}
+
+footer {
+    padding: 10px;
+    clear: both;
+    text-align: center;
+}
+
+#BigFlattrButton {
+    float: right
+}
+
+.rss-logo {
+    float: right
+}
+
+.social-logo {
+    display: inline-block;
+    float: right;
+    width: auto;
+    margin-left: 40px;
+    margin-bottom: 20px;
+}
+
+.social-logo img {
+    display: inline;
+}
+
+.homepage-photo > img {
+    border-radius: 6px;
+    float: left;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+
+table tr.active {
+    background: #f9f9f9;
+}
+
+img.printfriendly {
+    float: right;
+}
+
+pre {
+    clear: both;
+}

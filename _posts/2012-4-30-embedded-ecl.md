@@ -7,7 +7,7 @@ title: Embedded ECL
 ================
 <p class="meta">30 April 2012</p>
 
-Common lisp is one of my favourite programming languages. It's also proof that language designers are human. It has a serious library problem. While ways of using C libraries exist, none of them are simple. I often conclude that I should write a C program that is extend-able via Lisp\*. 
+Common lisp is one of my favourite programming languages. It's also proof that language designers are human. It has a serious library problem. While ways of using C libraries exist, none of them are simple. I often conclude that I should write a C program that is extend-able via Lisp*. 
 
 ECL is yet another open-source solution that suffers from a documentation problem. Not as large as some libraries, but it is somewhat lacking. So I created a minimal example of embedded usage. I would have thought this was the main use-case of ECL. The examples I found were far from minimal, and not written for Linux.
 
@@ -17,4 +17,4 @@ Callbacks into C need to be written specifically for ECL, using the functions to
 
 Unfortunately I've found no way of limiting the calls you can make inside the lisp. This is the first step to providing a secure sandbox. The best way would be to write another eval in the lisp itself, as this is trivial.
 
-<div class="footnote">\*Other conclusions include lua, using SBCL and 'save-lisp-and-die' to create an executable image, she-bang scripts, and writing my own lisp.</div>
+<div class="footnote">*Other conclusions include lua, using SBCL and 'save-lisp-and-die' to create an executable image, she-bang scripts, and writing my own lisp.</div>

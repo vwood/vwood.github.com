@@ -56,9 +56,15 @@ ul.posts li {
     line-height: 1.75em;
 }
 
+.footnote {
+    color: #aaa;
+    font-family: "Inconsolas", Monaco, "Consolas", monospace;
+    font-size: 80%;
+}
+
 ul.posts span {
     color: #aaa;
-    font-family: Monaco, "Consolas", monospace;
+    font-family: "Inconsolas", Monaco, "Consolas", monospace;
     font-size: 80%;
 }
 

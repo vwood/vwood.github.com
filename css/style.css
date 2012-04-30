@@ -15,7 +15,7 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
     font-size: 100%;
-    font: sans-serif;
+    font: 14px sans-serif;
 }
 
 h1 {
@@ -71,6 +71,7 @@ ul.posts span {
     font-weight: bold;
     margin-bottom: 2em;
     font-size: 150%;
+    font: 18px sans-serif;
 }
 
 .site .title a {

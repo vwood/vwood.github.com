@@ -70,6 +70,11 @@ ul.posts span {
     line-height: 1.5em;
 }
 
+.site img {
+    margin-left: auto;
+    margin-right: auto;
+}
+
 .title {
     color: #a00;
     font: 18px sans-serif;

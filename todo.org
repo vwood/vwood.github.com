@@ -10,4 +10,4 @@
 ** Open source - documentation (tutorials, examples and so on)
 ** General GUI/Game framework project
 ** JAVA reflection (towards a Java REPL and object inspector, or just using JDB)
-
+** Documenting other gists, and other repos

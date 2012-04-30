@@ -17,18 +17,19 @@ The two semaphores allow a thread to wait until there is something for it to do.
 
 Example usage:
 <pre>
-    pthread_t prod, cons;
-    channel_t channel;
+pthread_t prod, cons;
+channel_t channel;
 
-    channel_init(&amp;channel, 1, sizeof (char)); // Channel with a single char
+/* Channel with a single char */
+channel_init(&amp;channel, 1, sizeof (char));
 
-    pthread_create(&amp;prod, NULL, producer, (void \*) &amp;channel);
-    pthread_create(&amp;cons, NULL, consumer, (void \*) &amp;channel);
+pthread_create(&amp;prod, NULL, producer, (void \*) &amp;channel);
+pthread_create(&amp;cons, NULL, consumer, (void \*) &amp;channel);
 
-    pthread_join(prod, NULL);
-    pthread_join(cons, NULL);
+pthread_join(prod, NULL);
+pthread_join(cons, NULL);
 
-    channel_destroy(&channel);
+channel_destroy(&channel);
 </pre>
 
 Given two functions of type <pre>void \*() (void \*)</pre> the producer can add a char by calling <pre>channel_add(channel, char)</pre> and the producer uses <pre>channel_get(channel, ptr_to_char)</pre>

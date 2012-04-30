@@ -24,8 +24,8 @@ channel_t channel;
 /* Channel with a single char */
 channel_init(&amp;channel, 1, sizeof (char));
 
-pthread_create(&amp;prod, NULL, producer, (void \*) &amp;channel);
-pthread_create(&amp;cons, NULL, consumer, (void \*) &amp;channel);
+pthread_create(&amp;prod, NULL, producer, (void *) &amp;channel);
+pthread_create(&amp;cons, NULL, consumer, (void *) &amp;channel);
 
 pthread_join(prod, NULL);
 pthread_join(cons, NULL);
@@ -33,7 +33,7 @@ pthread_join(cons, NULL);
 channel_destroy(&channel);
 </pre>
 
-Given two functions of type <pre>void \*() (void \*)</pre> the producer can add a char by calling <pre>channel_add(channel, char)</pre> and the producer uses <pre>channel_get(channel, ptr_to_char)</pre>
+Given two functions of type <code>void *() (void *)</code> the producer can add a char by calling <pre>channel_add(channel, char)</pre> and the producer uses <pre>channel_get(channel, ptr_to_char)</pre>
 
 <div class="footnote">If I can't use threads then I run multiple non-communicating processes.</div>
 

@@ -5,7 +5,7 @@ title: Reactive Programming
 
 {{ page.title }}
 ================
-<p class="meta">30 April 2012</p>
+<p class="meta">29 April 2012</p>
 
 Reactive programming is often the first programming people encounter. Spreadsheets contain this style of programming using cells. Cells can contain simple values, or they can have formulas that depend on other cells.
 

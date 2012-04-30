@@ -8,7 +8,7 @@ html, body {
 }
 
 body {
-    background-color: "#FFD";
+    background-color: #FFD;
     font: 14px serif;
     text-align: center;
 }
@@ -57,13 +57,13 @@ ul.posts li {
 }
 
 .footnote {
-    color: #aaa;
+    color: #888;
     font-family: "Inconsolas", Monaco, "Consolas", monospace;
     font-size: 80%;
 }
 
 ul.posts span {
-    color: #aaa;
+    color: #888;
     font-family: "Inconsolas", Monaco, "Consolas", monospace;
     font-size: 80%;
 }
@@ -102,7 +102,7 @@ ul.posts span {
 }
 
 .site .title a.extra {
-    color: #aaa;
+    color: #888;
     text-decoration: none;
     margin-left: 1em;
     letter-spacing: -1px;

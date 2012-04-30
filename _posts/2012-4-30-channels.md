@@ -16,7 +16,7 @@ The two semaphores allow a thread to wait until there is something for it to do.
 
 <script src="http://gist.github.com/659733.js"> </script>
 
-Here is how to use them. If you have two functions of type <code>void \*() (void \*)</code> called <code>producer</code> and <code>consumer</code> the producer can add a char by calling <code>channel_add(channel, char)</code> and the producer uses <code>channel_get(channel, ptr_to_char)</code>
+Here is an example. If you have two functions of type <code>void \*() (void \*)</code> called <code>producer</code> and <code>consumer</code> the producer can add a char by calling <code>channel_add(channel, char)</code> and the producer uses <code>channel_get(channel, ptr_to_char)</code>
 
 
 <pre>

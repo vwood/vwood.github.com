@@ -5,7 +5,7 @@ title: New Post
 
 {{ page.title }}
 ================
-<p class="meta">30 April 2012 - Wellington</p>
+<p class="meta">30 April 2012</p>
 
 Testing this blog format... seeing what I should change or mix up.
 

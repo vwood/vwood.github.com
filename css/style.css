@@ -9,7 +9,7 @@ html, body {
 
 body {
     background-color: "#FFD";
-    font: 14px sans-serif;
+    font: 14px serif;
     text-align: center;
 }
 
@@ -70,7 +70,7 @@ ul.posts span {
     color: #a00;
     font-weight: bold;
     margin-bottom: 2em;
-    font-size: 120%;
+    font-size: 150%;
 }
 
 .site .title a {

@@ -1,0 +1,12 @@
+PCA
+PCA - eigenfaces
+ICA - eigenfaces
+Raytracing
+wificracking - yay4internet, str4nger, WEP vs WPA, McDonalds WIFI
+Lisp language
+Sockets, serialization
+APIs: Lisp, Python, Bash, Mobile touch screens (blocky), vim vs Emacs
+Open source - making it easy to send patches
+Open source - documentation (tutorials, examples and so on)
+Framework project
+JAVA reflection (towards a Java REPL and object inspector, or just using JDB)

@@ -22,9 +22,11 @@ Now the value of c is 15.
 <pre>a.set(10)</pre>
 Now the value of c is 20.
 
-Propagating changes as soon as they occur is very useful. Speeding up the feedback cycle and minimising the length of time it takes to iterate is important.
+Propagating changes as soon as they occur can be useful. It can speed up the feedback cycle and minimise the time it takes to iterate.
 
-Of course we need not propagate the changes when they happen. We can be lazy and do so only when the result is needed. If some computation takes a while to complete, all we need to do is flag all the children recursively as being dirty. Then we know when to perform the calculation.
+But we do not have to propagate the changes when they happen. We can be lazy and do work only when the result is needed. If some computation takes a while to complete, all we need to do is flag all the children recursively as being dirty. Then we know when to perform the calculation.
+
+Of course there can be a danger with lazily performing computations that use a lot of resources. So keep that it mind.
 
 <script src="https://gist.github.com/648874.js?file=cell.py"></script>
 

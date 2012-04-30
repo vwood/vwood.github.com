@@ -15,7 +15,9 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
     font-size: 100%;
-    font-family: sans-serif;
+    font-weight: bold;
+    letter-spacing: -1px;
+    font-family: 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
 }
 
 h1 {
@@ -77,6 +79,7 @@ ul.posts span {
 .site .title a {
     color: #a04;
     text-decoration: none;
+    letter-spacing: -1px;
 }
 
 .site .title a:hover {
@@ -87,6 +90,7 @@ ul.posts span {
     color: #aaa;
     text-decoration: none;
     margin-left: 1em;
+    letter-spacing: -1px;
 }
 
 .site .title a.extra:hover {
@@ -95,7 +99,7 @@ ul.posts span {
 
 .site .meta {
     color: #aaa;
-    font-family: Monaco, "Consolas", monospace;
+    font-family: 'DejaVu Sans Mono', 'Monaco', 'Consolas', monospace;
     font-size: 80%;
 }
 

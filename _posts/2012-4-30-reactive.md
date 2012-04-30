@@ -26,6 +26,8 @@ Propagating changes as soon as they occur is very useful. Speeding up the feedba
 
 Of course we need not propagate the changes when they happen. We can be lazy and do so only when the result is needed. If some computation takes a while to complete, all we need to do is flag all the children recursively as being dirty. Then we know when to perform the calculation.
 
+<script src="https://gist.github.com/648874.js?file=cell.py"></script>
+
 <a href="http://pypi.python.org/pypi/Trellis" title="Trellis">Trellis</a> supports this paradigm in Python, and <a href="http://common-lisp.net/project/cells/" title="Cells">Cells</a> does the same in Common Lisp.
 
 <div class="footnote">In retrospect, I really should have used the parent / child relationship for slot naming. I do maintain that 'i_depend_on' is much easier to read than dependancies, however.</div>

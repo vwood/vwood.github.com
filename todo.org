@@ -1,3 +1,4 @@
+* Ideas 
 PCA
 PCA - eigenfaces
 ICA - eigenfaces

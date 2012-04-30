@@ -10,3 +10,4 @@ Open source - making it easy to send patches
 Open source - documentation (tutorials, examples and so on)
 Framework project
 JAVA reflection (towards a Java REPL and object inspector, or just using JDB)
+Game frameworks

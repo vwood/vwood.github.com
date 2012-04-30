@@ -80,11 +80,12 @@ ul.posts span {
     font: 18px sans-serif;
     font-weight: bold;
     margin-bottom: 2em;
-    font-size: 150%;
+    font-size: 200%;
 }
 
 .site .title a {
-    color: #a04;
+    color: #806;
+    font-weight: bolder;
     text-decoration: none;
     letter-spacing: -1px;
 }

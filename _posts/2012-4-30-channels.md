@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Channels
+categories: [threads]
 ---
 
 {{ page.title }}

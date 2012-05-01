@@ -16,7 +16,7 @@ The two semaphores allow a thread to wait until there is something for it to do.
 
 <script src="http://gist.github.com/659733.js"> </script>
 
-Here is an example. If you have two functions of type <code>void \*() (void \*)</code> called <code>producer</code> and <code>consumer</code> the producer can add a char by calling <code>channel_add(channel, char)</code> and the producer uses <code>channel_get(channel, ptr_to_char)</code>
+Here is an example. If you have two functions of type `void \*() (void \*)` called `producer` and `consumer` the producer can add a char by calling `channel_add(channel, char)` and the producer uses `channel_get(channel, ptr_to_char)`.
 
 
 <pre>
@@ -35,5 +35,5 @@ pthread_join(cons, NULL);
 channel_destroy(&channel);
 </pre>
 
-<div class="footnote">If I can't use threads then I run multiple non-communicating processes.</div>
+[^1]: If I can't use threads then I run multiple non-communicating processes.
 

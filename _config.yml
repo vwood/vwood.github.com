@@ -1,4 +1,4 @@
 ---
-markdown: rdiscount
+markdown: kramdown
 pygments: true
 exclude: todo.org

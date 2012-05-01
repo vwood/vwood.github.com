@@ -57,14 +57,14 @@ ul.posts li {
 }
 
 .footnote {
-    color: #888;
-    font-family: "Inconsolas", Monaco, "Consolas", monospace;
+    color: #666;
+    font-family: 'Inconsolata', 'Monaco', 'Consolas', 'DejaVu Sans Mono', monospace;
     font-size: 80%;
 }
 
 ul.posts span {
-    color: #888;
-    font-family: "Inconsolas", Monaco, "Consolas", monospace;
+    color: #666;
+    font-family: 'Inconsolata', 'Monaco', 'Consolas', 'DejaVu Sans Mono', monospace;
     font-size: 80%;
 }
 
@@ -122,7 +122,7 @@ ul.posts span {
 }
 
 .site .title a.extra {
-    color: #888;
+    color: #666;
     text-decoration: none;
     margin-left: 1em;
     letter-spacing: -1px;
@@ -134,7 +134,7 @@ ul.posts span {
 
 .site .meta {
     color: #aaa;
-    font-family: 'DejaVu Sans Mono', 'Monaco', 'Consolas', monospace;
+    font-family: 'Inconsolata', 'Monaco', 'Consolas', 'DejaVu Sans Mono', monospace;
     font-size: 80%;
 }
 

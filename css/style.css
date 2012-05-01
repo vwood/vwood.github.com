@@ -8,7 +8,7 @@ html, body {
 }
 
 body {
-    background-color: #fed;
+    background-color: #ec6;
     font: 14px serif;
     text-align: center;
 }
@@ -69,6 +69,7 @@ ul.posts span {
 }
 
 .site {
+    background-color: #fed;
     font-size: 110%;
     text-align: justify;
     width: 42em;

@@ -71,14 +71,14 @@ ul.posts span {
 .site {
     font-size: 110%;
     text-align: justify;
-    width: 40em;
+    width: 42em;
     margin: 3em auto 2em auto;
     line-height: 1.5em;
 }
 
 .gist {
 	font-size: 80% !important;
-	margin: 15px 0 !important;
+	margin: 10px 0 !important;
 }
 
 .gist-file {
@@ -87,11 +87,11 @@ ul.posts span {
 
 .gist-meta {
 	border: 1px solid #ddd !important;
-	padding: 12px !important;
+	padding: 10px !important;
 }
 
 .gist-data {
-	padding: 15px !important;
+	padding: 10px !important;
 	border: 1px solid #ddd !important;
 	border-bottom: none !important;
 }

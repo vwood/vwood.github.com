@@ -8,7 +8,7 @@ categories: [lisp, emacs]
 ================
 <p class="meta">2 May 2012</p>
 
-[Emacs](http://www.gnu.org/software/emacs/) is a very configurable editor. I once wanted to change a really annoying behaviour of Eclipse, and I was told that in order to do so I would have to write a plugin. In order to do this I would have to learn the Eclipse APIs, create a plugin project (not a java project) and then figure out what part of Eclipse I needed to change.
+[Emacs](http://www.gnu.org/software/emacs/) is a very configurable editor. I once wanted to change a really annoying behaviour of Eclipse, and I was told that in order to do so I would have to write a plugin. In order to do this you need to learn the Eclipse APIs, create a plugin project (apparently not a Java project) and then figure out what part of Eclipse to change. I do Java in Emacs now (along with everything else).
 
 In Emacs all I need to do is write some lisp. As little as a single function, or adding a single hook. All the documentation, all of the source is available *in* the editor. Emacs lacks the huge learning wall before you can configure it.
 

@@ -39,7 +39,7 @@ A common idiom for packages that may not always exist is to use the optional arg
 (when (require 'w3m-load nil t)
   ...)
 ~~~~
-<br />
+
 
 Snippets, Workgroups, and Other Config
 --------------------------------------
@@ -55,7 +55,7 @@ This elisp loads stored workgroups, if they exist. All you have to do is save th
    ((file-exists-p wg-local) (wg-load wg-local))
    ((file-exists-p wg-location) (wg-load wg-location))))
 ~~~~
-<br />
+
 
 Operating Systems and Emacs Versions
 ------------------------------------

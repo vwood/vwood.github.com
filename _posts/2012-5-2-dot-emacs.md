@@ -24,6 +24,9 @@ I suggest instead you place everything into a .emacs.d/ directory. Placing a ini
 
 I suggest any extra local configuration be loaded at the end of the init.el file, and that it be placed in a subdirectory of the .emacs.d/ directory. At the end of init.el you can `(load "~/.emacs.d/local/init.el")` to load it.
 
+You'll also want to ignore *.elc files in a .gitignore file.
+
+
 Packages
 --------
 I do suggest that any packages not be stored in the actual repository. You can add them as Git submodules (essentially a link to another repository), but that means you have to handle installation and they have to be in a Git repository.

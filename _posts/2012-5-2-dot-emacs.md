@@ -8,7 +8,7 @@ categories: [lisp, emacs]
 ================
 <p class="meta">2 May 2012</p>
 
-[http://www.gnu.org/software/emacs/](Emacs) is a very configurable editor. I once wanted to change a really annoying behaviour of Eclipse, and I was told that in order to do so I would have to write a plugin. In order to do this I would have to learn the Eclipse APIs, create a plugin project (not a java project) and then figure out what part of Eclipse I needed to change.
+[Emacs](http://www.gnu.org/software/emacs/) is a very configurable editor. I once wanted to change a really annoying behaviour of Eclipse, and I was told that in order to do so I would have to write a plugin. In order to do this I would have to learn the Eclipse APIs, create a plugin project (not a java project) and then figure out what part of Eclipse I needed to change.
 
 In Emacs all I need to do is write some lisp. As little as a single function, or adding a single hook. All the documentation, all of the source is available *in* the editor. Emacs lacks the huge learning wall before you can configure it.
 
@@ -28,7 +28,7 @@ Packages
 --------
 I do suggest that any packages not be stored in the actual repository. You can add them as Git submodules (essentially a link to another repository), but that means you have to handle installation and they have to be in a Git repository.
 
-Far better is to use either [http://tromey.com/elpa/](ELPA), or [https://github.com/dimitri/el-get](el-get) to handle the packages. Either allows a short amount of elisp inside the init.el to load any number of packages (less in ELPA).
+Far better is to use either [ELPA](http://tromey.com/elpa/), or [el-get](https://github.com/dimitri/el-get) to handle the packages. Either allows a short amount of elisp inside the init.el to load any number of packages (less in ELPA).
 
 Snippets, Workgroups, and Other Config
 --------------------------------------
@@ -40,6 +40,7 @@ This elisp loads stored workgroups, if they exist. All you have to do is save th
 (let ((wg-location "~/.emacs.d/workgroups"))
     (when (file-exists-p wg-location) (wg-load wg-location)))
 ~~~~
+
 
 
 Operating Systems and Emacs Versions

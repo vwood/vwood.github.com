@@ -12,7 +12,7 @@ categories: [lisp, emacs]
 
 In Emacs all I need to do is write some lisp. As little as a single function, or adding a single hook. All the documentation, all of the source is available *in* the editor. Emacs lacks the huge learning wall before you can configure it.
 
-I still miss the automatic handling of imports. There are packages that do this, or so I'm told, but I have not been able to install them successfully. So it's not all gravy on this side of things.
+I still miss the automatic handling of Java imports (Though this is really a failing of Java). There are packages that do this, or so I'm told, but I have not been able to install them successfully. So it's not all gravy on this side of things.
 
 So I've stuck with emacs, and configuring it. The one thing that eventually people want to do is to place all their configuration files under source control. The idea being that this configuration takes time and effort to develop, and then any machine can quickly become what you are used to.
 

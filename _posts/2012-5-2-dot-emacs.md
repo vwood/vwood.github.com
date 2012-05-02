@@ -32,7 +32,7 @@ Far better is to use either [ELPA](http://tromey.com/elpa/), or [el-get](https:/
 
 Snippets, Workgroups, and Other Config
 --------------------------------------
-Configuration doesn't just end at elisp. YaSnippet and Workgroups for emacs are two that are nice to accumulate in an emacs configuration. 
+Configuration doesn't just end at elisp. [YaSnippet](https://github.com/capitaomorte/yasnippet) and [Workgroups](https://github.com/tlh/workgroups.el) are two that are nice to accumulate in an emacs configuration. 
 
 This elisp loads stored workgroups, if they exist. All you have to do is save the workgroups at ~/.emacs.d/workgroups and they will be restored on start up:
 

@@ -31,24 +31,35 @@ Packages
 --------
 I do suggest that any packages not be stored in the actual repository. You can add them as Git submodules (essentially a link to another repository), but that means you have to handle installation and they have to be in a Git repository.
 
-Far better is to use either [ELPA](http://tromey.com/elpa/), or [el-get](https://github.com/dimitri/el-get) to handle the packages. Either allows a short amount of elisp inside the init.el to load any number of packages (less in ELPA).
+Far better is to use either [ELPA](http://tromey.com/elpa/), or [el-get](https://github.com/dimitri/el-get) to handle the packages. Both allow a small amount of elisp to load packages. Thought there are less packages in ELPA, and el-get allows you to write recipes for packages not already included in el-get.
+
+A common idiom for packages that may not always exist is to use the optional arguments for `require`, like this:
+
+~~~~
+(when (require 'w3m-load nil t)
+  ...)
+~~~~
+<br />
 
 Snippets, Workgroups, and Other Config
 --------------------------------------
-Configuration doesn't just end at elisp. [YaSnippet](https://github.com/capitaomorte/yasnippet) and [Workgroups](https://github.com/tlh/workgroups.el) are two that are nice to accumulate in an emacs configuration. 
+Configuration doesn't just end at elisp. [YaSnippet](https://github.com/capitaomorte/yasnippet) and [Workgroups](https://github.com/tlh/workgroups.el) have files are that are nice to accumulate in an emacs configuration.
+For YaSnippet, snippets are good for boilerplate and patterns that are frequently typed. With Workgroups it is useful to store a base configuration.
 
 This elisp loads stored workgroups, if they exist. All you have to do is save the workgroups at ~/.emacs.d/workgroups and they will be restored on start up:
 
 ~~~~
-(let ((wg-location "~/.emacs.d/workgroups"))
-    (when (file-exists-p wg-location) (wg-load wg-location)))
+(let ((wg-location "~/.emacs.d/workgroups")
+      (wg-local "~/.emacs.d/local/workgroups"))
+  (cond 
+   ((file-exists-p wg-local) (wg-load wg-local))
+   ((file-exists-p wg-location) (wg-load wg-location))))
 ~~~~
-
-
+<br />
 
 Operating Systems and Emacs Versions
 ------------------------------------
-`emacs-major-version` and `system-type` are important variables to allow your config to work around any inconsistency between operating systems or emacs versions. In particular the system-type is useful for configuring cygwin on Windows, should you have to deal with that.
+`emacs-major-version` and `system-type` are important variables to allow your config to work around any inconsistency between operating systems or emacs versions. In particular the system-type is useful for configuring cygwin on Windows, should you have to deal with that. It's also useful for the different fonts available on different OSes.
 
 Don't start from scratch
 ------------------------

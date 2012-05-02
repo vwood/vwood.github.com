@@ -12,14 +12,14 @@ If I must use multiple threads, I communicate with channels. Channels allow diff
 
 This is also a good demonstration of the difference between a mutex and a semaphore. The mutex in the following is used to prevent multiple threads removing items at the same time, or adding them at the same time. It would not be necessary if there is only one consumer and one producer.
 
-The two semaphores allow a thread to wait until there is something for it to do. One semaphore is for consumers to wait on, the other is for producers. After consuming or producing they then use the other semaphore to allow the other type to act.
+The two semaphores allow a thread to wait until there is something for it to do. One semaphore is for consumers to wait on, the other is for producers. After consuming or producing they then signal the other semaphore to allow the other type to act.
 
 <script src="http://gist.github.com/659733.js"> </script>
 
-Here is an example. If you have two functions of type `void \*() (void \*)` called `producer` and `consumer` the producer can add a char by calling `channel_add(channel, char)` and the producer uses `channel_get(channel, ptr_to_char)`.
+Here is an example. If you have two functions of type `void *() (void *)` called `producer` and `consumer` the producer can add a char by calling `channel_add(channel, char)` and the producer uses `channel_get(channel, ptr_to_char)`.
 
 
-<pre>
+~~~~
 pthread_t prod, cons;
 channel_t channel;
 
@@ -33,7 +33,8 @@ pthread_join(prod, NULL);
 pthread_join(cons, NULL);
 
 channel_destroy(&channel);
-</pre>
+~~~~
+<br />
 
 [^1]: If I can't use threads then I run multiple non-communicating processes.
 

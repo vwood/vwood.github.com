@@ -22,7 +22,11 @@ Git is my weapon of choice for this, although any VCS with free hosting would wo
 
 I suggest instead you place everything into a .emacs.d/ directory. Placing a init.el file inside .emacs.d/ will be loaded by Emacs just like the .emacs file is. Although any .emacs will take precedence, so if you encounter problems that may be why.
 
-I suggest any extra local configuration be loaded at the end of the init.el file, and that it be placed in a subdirectory of the .emacs.d/ directory. At the end of init.el you can `(load "~/.emacs.d/local/init.el")` to load it.
+I suggest any extra local configuration be loaded at the end of the init.el file, and that it be placed in a subdirectory of the .emacs.d/ directory. At the end of init.el you can load it with:
+
+~~~~
+(load "~/.emacs.d/local/init.el")
+~~~~
 
 You'll also want to ignore *.elc files in a .gitignore file.
 

@@ -2,7 +2,6 @@
 layout: post
 title: .emacs
 categories: [lisp, emacs]
-published: false
 ---
 
 {{ page.title }}
@@ -27,10 +26,24 @@ I suggest any extra local configuration be loaded at the end of the init.el file
 
 Packages
 --------
-I do suggest that any packages not be stored in the actual repository. 
+I do suggest that any packages not be stored in the actual repository. You can add them as Git submodules (essentially a link to another repository), but that means you have to handle installation and they have to be in a Git repository.
+
+Far better is to use either ELPA, or el-get to handle the packages. Either allows a short amount of elisp inside the init.el to load any number of packages (less in ELPA).
 
 Snippets, Workgroups, and Other Config
 --------------------------------------
+Configuration doesn't just end at elisp. YaSnippet and Workgroups for emacs are two that are nice to accumulate in an emacs configuration. 
+
+This elisp loads stored workgroups, if they exist. All you have to do is save the workgroups at ~/.emacs.d/workgroups and they will be restored on start up:
+
+`(let ((wg-location "~/.emacs.d/workgroups"))
+    (when (file-exists-p wg-location) (wg-load wg-location)))`
+
 
 Operating Systems and Emacs Versions
 ------------------------------------
+`emacs-major-version` and `system-type` are important variables to allow your config to work around any inconsistency between operating systems or emacs versions. In particular the system-type is useful for configuring cygwin on Windows, should you have to deal with that.
+
+Don't start from scratch
+------------------------
+There is no reason to start from scratch. There are a large number of emacs configurations available to begin from. Several of the default settings of Emacs are a bit puzzling. Of course I doubt anyone would ever completely agree with someone else's configuration, but it's a better start than default Emacs.

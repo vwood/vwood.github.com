@@ -43,4 +43,7 @@ textbox, canvas so on
 integration testing (via examples)
 Building an emacs like texteditor
 evaluation of python within python
-*** Do something with HMMs
+*** Do something with HMMs or EDA/BOA
+*** Something about markov chains
+Possibly related to N-grams
+Possibly related to HMMs

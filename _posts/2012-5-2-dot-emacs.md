@@ -67,4 +67,6 @@ Operating Systems and Emacs Versions
 
 Don't start from scratch
 ------------------------
-There is no reason to start from scratch. There are a large number of emacs configurations available to begin from. Several of the default settings of Emacs are a bit puzzling. Of course I doubt anyone would ever completely agree with someone else's configuration, but it's a better start than default Emacs.
+There is no reason to start from scratch[^1]. There are a large number of emacs configurations available to begin from. Several of the default settings of Emacs are a bit questionable. Of course I doubt anyone would ever completely agree with someone else's configuration, but it's a better start than default Emacs.
+
+[^1]: This would be an example of "Do as I say, not as I do."

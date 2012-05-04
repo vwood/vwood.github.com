@@ -1,6 +1,6 @@
 ---
 layout: post
-title: .emacs
+title: .emacs in source control
 tags: [lisp, emacs]
 ---
 

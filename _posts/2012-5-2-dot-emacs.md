@@ -1,7 +1,7 @@
 ---
 layout: post
 title: .emacs
-categories: [lisp, emacs]
+tags: [lisp, emacs]
 ---
 
 {{ page.title }}

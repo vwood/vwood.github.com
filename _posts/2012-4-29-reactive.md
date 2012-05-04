@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Reactive Programming
-categories: [python]
+tags: [python]
 ---
 
 {{ page.title }}

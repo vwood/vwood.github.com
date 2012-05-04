@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Embedded ECL
-categories: [lisp]
+tags: [lisp]
 ---
 
 {{ page.title }}

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Asynchronous Channels
-categories: [threads]
+tags: [threads]
 ---
 
 {{ page.title }}

@@ -27,3 +27,11 @@ Focus is required in short amounts
 Planning is required (why are you doing what you are doing, was it successful, what should I do now?)
 
 Publish your software with an example use case. This is like testing but the tests should be executable by users. This is important as it is the users who use the software. Unittests show how developers should use APIs (If you're lucky and they don't bypass the actual APIs in the name of testing)
+
+
+If Agile is hard to do, then that's a failing of the 'methodology' itself. 
+It needs to be simple because people pay very little attention to the methodologies than their work (and rightly so)
+
+Work queues/Priority
+
+Incentives/Disincentives

@@ -25,5 +25,8 @@ Perlin Noise is really a combination of different layers
 (Fractal generation is more directly a hierarchy of layers in that the top layer determines what the bottom layer will look like.)
 
 2D Hidden Markov Machines (Or FSA)
+Have to use log-probabilities
+
+Hand crafted FSA
 
 Biomes / Different levels of detail

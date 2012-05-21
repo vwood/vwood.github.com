@@ -26,13 +26,14 @@ Now we can use mode-compile-quiet as an alternative to mode-compile. I prefer no
 What I ended up doing though, is compiling after saving. This has the benefit of not requiring I save to a temporary file, and I save habitually anyway. So `after-save-hook` it is. We should also allow removal, so the keybinding will toggle the setting and also message us so we know which way it has been set.
 
 ~~~
-;; C-c C-% will set a buffer local hook to use mode-compile after saving the file
+;; C-c C-% will set a buffer local hook to use mode-compile after saving
 (global-set-key '[(ctrl c) (ctrl %)]
                 (lambda () 
                   (interactive)
                   (if (member 'mode-compile-quiet after-save-hook)
                       (progn
-                        (setq after-save-hook (remove 'mode-compile-quiet after-save-hook))
+                        (setq after-save-hook 
+                            (remove 'mode-compile-quiet after-save-hook))
                         (message "No longer compiling after saving."))
                     (progn
                       (add-to-list 'after-save-hook 'mode-compile-quiet)

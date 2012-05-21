@@ -187,6 +187,9 @@ ul.posts span {
     font-size: 85%;
     padding: 0 .2em;
     margin-bottom: 1em;
+}
+
+#post p code {
     white-space:nowrap;
 }
 

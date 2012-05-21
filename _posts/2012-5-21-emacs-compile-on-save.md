@@ -52,6 +52,7 @@ With the above in place it is easy to have the code you are working on in one wi
 If you're working on a program that outputs to a separate file it can be useful to have it also output `-*- mode: auto-revert -*-` on the first line[^2]. This turns on auto-revert-mode which will reload the contents of the buffer whenever the file changes.
 
 If you are using files a lot, the compilation buffer can be annoying, so we have two options, the first is to prevent the `*compilation*` buffer from appearing at all. It will still be created, but it will have to be switched to explicitly (which allows us to still examine the output if you want):
+
 ~~~
 ;; Prevent compilation buffer from showing up
 (defadvice compile (around compile/save-window-excursion first () activate)
@@ -59,6 +60,7 @@ If you are using files a lot, the compilation buffer can be annoying, so we have
 ~~~
 
 Or, we could allow the buffer to show up, but if compilation is successful then go back to the previous window configuration. This means you can't see the output, but here it is:
+
 ~~~
 ;; Bury the compilation buffer when compilation is finished and successful.
 (add-to-list 'compilation-finish-functions
@@ -69,6 +71,7 @@ Or, we could allow the buffer to show up, but if compilation is successful then 
 ~~~
 
 Finally it is useful to scroll to the first error output in the buffer. This also scrolls to the bottom of the output if no errors occur, which is also useful:
+
 ~~~
 (setq compilation-scroll-output 'first-error)
 ~~~

@@ -27,6 +27,10 @@ Perlin Noise is really a combination of different layers
 2D Hidden Markov Machines (Or FSA)
 Have to use log-probabilities
 
+Hierarchical/Layered HMM? Every other layer goes the other way? Undirected graph model?
+
 Hand crafted FSA
+
+Gibbs sampling
 
 Biomes / Different levels of detail

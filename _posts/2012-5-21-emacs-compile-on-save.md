@@ -8,11 +8,11 @@ tags: [emacs]
 ================
 <p class="meta">21 May 2012</p>
 
-Compiling in emacs can be done with the `M-x compile` command. As always the defaults aren't so good, and I'm going to fix them
+Compiling in emacs can be done with the `M-x compile` command. The defaults settings aren't so good. So I'll share how to fix them.
 
-Replace compile with [smart-compile](http://www.emacswiki.org/emacs/SmartCompile) or [mode-compile](http://emacswiki.org/emacs/ModeCompile) as fast as you can. Getting rid of questions about what options or command you want to use is the first step to getting automatic compilation (and faster feedback). Mode-compile is as easy as using [el-get](https://github.com/dimitri/el-get): `(el-get 'sync '(mode-compile))`
+Replace compile with [smart-compile](http://www.emacswiki.org/emacs/SmartCompile) or [mode-compile](http://emacswiki.org/emacs/ModeCompile) as fast as you can. These both use the filename or major mode of a buffer to pick a compile command. Getting rid of the prompts about options or commands is the first step to getting automatic compilation (and faster feedback). Getting mode-compile is as easy as using [el-get](https://github.com/dimitri/el-get): `(el-get 'sync '(mode-compile))`
 
-Unfortunately `M-x mode-compile` still asks for extra arguments to the compiler. So first we quiet down the mode-compile to stop asking for anything:
+Unfortunately `M-x mode-compile` still asks for arguments to the compiler. We can specify nothing everytime it asks for information like this:
 
 ~~~
 (defun mode-compile-quiet ()
@@ -21,9 +21,9 @@ Unfortunately `M-x mode-compile` still asks for extra arguments to the compiler.
     (mode-compile)))
 ~~~
 
-Now we can use mode-compile-quiet as an alternative to mode-compile. I prefer not having to explicitly call M-x commands repeatedly, and so I could give it a keybinding. However, I really want it to compile whenever I've made an edit so perhaps there is a hook[^1] that happens after changes like `after-change-functions` that can be set per buffer.
+Now we can use mode-compile-quiet as an alternative to mode-compile. I prefer not to explicitly call M-x commands and so I would normally give it a keybinding. However, what I really want is for it to compile whenever I've made an edit so perhaps there is a hook[^1] that happens after changes like `after-change-functions` that can be set per buffer.
 
-What I ended up doing though, is compiling after saving. This has the benefit of not requiring I save to a temporary file, and I save habitually anyway. So `after-save-hook` it is. We should also allow removal, so the keybinding will toggle the setting and also message us so we know which way it has been set.
+What I ended up doing though, is compiling after saving. This means the file is already saved and I don't have to save to a temporary file, and I save habitually anyway. So `after-save-hook` it is. We should toggle the setting so it can be turned off. It's important to also send a message to show the current setting.
 
 ~~~
 ;; C-c C-% will set a buffer local hook to use mode-compile after saving

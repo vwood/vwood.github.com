@@ -7,7 +7,12 @@
     <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
     <link rel="stylesheet" href="/css/style.css" type="text/css" />
     <link rel="alternate" href="/atom.xml" type="application/atom+xml" title="V Wood - Atom" />
-    <script type="text/javascript">
+    <script type="text/javascript"><!--
+    function rot(s) { return s.replace(/[a-zA-Z]/g,function(c){return String.fromCharCode((c<="Z"?90:122)>=(c=c.charCodeAt(0)+13)?c:c-26);}); };
+    var add = ['z','n','vy','gb:'].join(); add = add.concat('rffpbzo'+'vangbe'.concat('@'+'tzn')); add += 'vy'; add += '.p'+'bz';
+    document.getElementById('address_rewrite').href = rot(add); //-->
+    </script>
+    <script type="text/javascript"><!--
       var _gaq = _gaq || [];
       _gaq.push(['_setAccount', 'UA-31423709-1']);
       _gaq.push(['_trackPageview']);
@@ -16,7 +21,7 @@
       var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
       ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
       var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-      })();
+      })(); //-->
     </script>
   </head>
   <body>
@@ -24,6 +29,7 @@
       <div class="title">
         <a href="/">vwood</a>
         <a class="extra" href="https://github.com/vwood">github</a>
+        <a class="extra" id="address_rewrite" href="#" rel="nofollow">email</a>
       </div>
       {{ content }}
     </div>

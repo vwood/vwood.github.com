@@ -29,7 +29,7 @@ Have to use log-probabilities
 
 Hierarchical/Layered HMM? Every other layer goes the other way? Undirected graph model?
 
-Hand crafted FSA
+Hand crafted FSA/MRF
 
 Gibbs sampling
 

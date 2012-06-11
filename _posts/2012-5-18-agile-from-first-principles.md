@@ -35,3 +35,8 @@ It needs to be simple because people pay very little attention to the methodolog
 Work queues/Priority
 
 Incentives/Disincentives
+
+Trust employees (you have to anyway)
+Accountability vs. culture
+
+Changing culture is hard, it's best to start, and then maintain it.

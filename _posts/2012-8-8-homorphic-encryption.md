@@ -48,7 +48,8 @@ As an alternative (but without ruling out a move to larger values) we can add re
 
 One attack, still possible against NAND (and NOR) tables, is that x NAND x is NOT x. As such, I suggest for each x we pick one x' where x NAND x = x' and x' NAND x' = x. Otherwise an attacker could still segregate 0 values from 1 values.
 
-The remaining problems are: 
+The remaining problems are:
+
 * how to select secure look-up tables (preventing the attacker from determining their values by how they are connected in the look-up table.)
 * how to encode the actual programs
 * how to loop (A rather big sticking point of the program representation)

@@ -15,10 +15,10 @@ So from what I've read, to provide arbitrary operations on data, we must provide
 
 Already I'm thinking just provide NAND or NOR and be done with it. With NAND we can have:
 
-| NOT x    | x NAND x                |
-| x OR y   | (NOT x) NAND (NOT y)    |
-| x AND y  | NOT (x NAND y)          |
-| x XOR y  | (x OR y) AND (x NAND y) |
+| NOT x    |=| x NAND x                |
+| x OR y   |=| (NOT x) NAND (NOT y)    |
+| x AND y  |=| NOT (x NAND y)          |
+| x XOR y  |=| (x OR y) AND (x NAND y) |
 
 We can also think of binary binary operations[^1] as being a dispatch of the first argument to a unary binary operation on the second argument. The unary binary operations are: false, true, not and identity.
 

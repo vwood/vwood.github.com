@@ -23,7 +23,7 @@ Already I'm thinking just provide NAND or NOR and be done with it. With NAND we 
 We can also think of binary binary operations[^1] as being a dispatch of the first argument to a unary binary operation on the second argument. The unary binary operations are: false, true, not and identity.
 
 | input | false | true | not | identity |
-|-------|-------|------|-----|----------|
+|:-----:|:-----:|:----:|:---:|:--------:|
 |     0 |     0 |    1 |   1 |        0 |
 |     1 |     0 |    1 |   0 |        1 |
 

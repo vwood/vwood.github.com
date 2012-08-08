@@ -3,7 +3,6 @@ layout: post
 title: Homomorphic Encryption
 tags: [Encryption]
 date: 2012-08-08
-published: false
 ---
 
 {{ page.title }}

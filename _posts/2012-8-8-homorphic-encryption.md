@@ -30,7 +30,7 @@ We can also think of binary binary operations[^1] as being a dispatch of the fir
 NAND and NOR then become a dispatch:
 
 | lhs |      NAND |       NOR |
-|-----|-----------|-----------|
+|:---:|----------:|----------:|
 |   0 |  true rhs |   not rhs |
 |   1 |   not rhs | false rhs |
 

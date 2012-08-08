@@ -9,11 +9,11 @@ date: 2012-08-08
 ================
 <p class="meta">8 August 2012</p>
 
-I'm no expert on encryption, but I find the concept of homomorphic encryption very interesting. You can have computers in the cloud perform computation on data, without having access to the plaintext.
+I'm no expert on encryption, but I find the concept of homomorphic encryption very interesting. You can have remote computers perform computation on data, without giving them the plaintext.
 
-So from what I've read, to provide arbitrary operations on data, we must provide addition and multiplication of the plaintext as primitives. If we're working with bits, addition corresponds to XOR and multiplication correponds to AND (consider that all operations will be modulus some maximum value).
+From what I've read, to provide arbitrary operations on data we must provide addition and multiplication of the plaintext as primitives. If we work with individual bits addition corresponds to XOR and multiplication corresponds to AND (modulus 2).
 
-Already I'm thinking just provide NAND or NOR and be done with it. With NAND we can have:
+So just provide NAND or NOR and be done with it. With NAND we can have:
 
 | NOT x    |=| x NAND x                |
 | x OR y   |=| (NOT x) NAND (NOT y)    |

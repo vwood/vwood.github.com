@@ -42,7 +42,6 @@ I suggest programs be encoded by providing a list of inputs, and then how they s
 
 As an extension, each encoding could count the number of operations performed on it (modulo some limit). This would be a way to verify the correct number of operations occured. 
 
-
 Binary functions as dispatch
 ----------------------------
 

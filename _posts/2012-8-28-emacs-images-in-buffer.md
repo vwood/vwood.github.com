@@ -37,6 +37,7 @@ Then we need to update images (which is not done on the fly) in a hook after com
 The call to `clear-image-cache` is to prevent the images being cached. I've been unable to find a way of just flushing the images used within a specific buffer. Calling `iimage-mode` with nil then t, disables then enables the minor-mode, causing it to refind all images within the buffer.
 
 So let's try it with some python, creating a simple image with PIL:
+
 ~~~
 #!/usr/bin/env python2
 

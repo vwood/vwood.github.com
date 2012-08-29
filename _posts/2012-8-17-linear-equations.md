@@ -2,6 +2,7 @@
 layout: post
 title: linear equations
 tags: [compressed sensing, linear regression]
+published: false
 ---
 
 {{ page.title }}

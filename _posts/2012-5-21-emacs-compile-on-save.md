@@ -8,7 +8,7 @@ tags: [emacs]
 ================
 <p class="meta">21 May 2012</p>
 
-Compiling in emacs can be done with the `M-x compile` command. The defaults settings aren't so good. So I'll share how to fix them.
+Compiling in emacs can be done with the `M-x compile` command. We also can use this to run scripts. `M-x compile` captures the output of the compilation (or script) and places it in a `*compilation*` buffer. The default settings aren't so good. So I'll share how to fix them.
 
 Replace compile with [smart-compile](http://www.emacswiki.org/emacs/SmartCompile) or [mode-compile](http://emacswiki.org/emacs/ModeCompile) as fast as you can. These both use the filename or major mode of a buffer to pick a compile command. Getting rid of the prompts about options or commands is the first step to getting automatic compilation (and faster feedback). Getting mode-compile is as easy as using [el-get](https://github.com/dimitri/el-get): `(el-get 'sync '(mode-compile))`
 

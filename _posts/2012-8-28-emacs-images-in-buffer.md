@@ -8,7 +8,7 @@ tags: [emacs]
 ================
 <p class="meta">28 August 2012</p>
 
-Building upon [compiling buffers](emacs-compile-on-save.html), I want to display images in the compiled output. Having recently seen [inline images in org-mode](http://floatsolutions.com/blog/2010/10/displaying-inline-images-in-emacs-org-mode/).
+Building upon having [script output in emacs buffers](emacs-compile-on-save.html), I want to display images as part of the scripts output. Having recently seen [inline images in org-mode](http://floatsolutions.com/blog/2010/10/displaying-inline-images-in-emacs-org-mode/).
 
 So we first enable the mode (add to .emacs):
 

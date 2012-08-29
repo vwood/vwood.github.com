@@ -2,7 +2,6 @@
 layout: post
 title: Images in emacs buffer
 tags: [emacs]
-published: false
 ---
 
 {{ page.title }}
@@ -11,14 +10,14 @@ published: false
 
 Building upon [compiling buffers](emacs-compile-on-save.html), I want to display images in the compiled output. Having recently seen [inline images in org-mode](http://floatsolutions.com/blog/2010/10/displaying-inline-images-in-emacs-org-mode/).
 
-So we first enable the mode (add to .emacs)
+So we first enable the mode (add to .emacs):
 ~~~
 (iimage-mode)
 ~~~
 
 or `M-x iimage-mode`. Now text that matches a regex in `iimage-mode-image-regex-alist' will be replaced with the actual image. By default this matches bare image filenames, and filenames within angle brackets (<>).
 
-Then we need to update images (not done on the fly) on an after compile hook. The `compilation-finish-functions' appears to be the hook to use.
+Then we need to update images (which is not done on the fly) in a hook after compilation. The `compilation-finish-functions' appears to be the hook to use.
 
 ~~~
 (defun refresh-iimages ()
@@ -35,7 +34,7 @@ Then we need to update images (not done on the fly) on an after compile hook. Th
                  (refresh-iimages))))
 ~~~
 
-The call to `clear-image-cache' is to prevent the images being cached. I've been unable to find a way of just flushing the images used within a specific buffer.
+The call to `clear-image-cache` is to prevent the images being cached. I've been unable to find a way of just flushing the images used within a specific buffer. Calling `iimage-mode` with nil then t, disables then enables the minor-mode, causing it to refind all images within the buffer.
 
 So let's try it with some python, creating a simple image with PIL:
 ~~~
@@ -51,10 +50,10 @@ draw.text((10, 10), 'Hello, World!', fill=(0, 120, 255))
          
 im.save('foo.png', 'PNG')
 
-print 'foo.png'
+print '<foo.png>'
 ~~~
 
-And of course, plotting using mathplotlib:
+And of course, plotting using mathplotlib. Ideally some of this would be in a helper library.
 
 ~~~
 #!/usr/bin/env python2
@@ -99,6 +98,6 @@ plt.savefig('plot.png', dpi=60)
 print '<plot.png>'
 ~~~
 
-You have to print out the filename as part of the output.
+You have to print out the filename as part of the output, so iimage-mode will replace the filename with the actual image. Here's what it actually looks like:
 
-TODO: Insert a screenshot here
+<img src="/images/emacs-iimage.png" alt="Generated image in emacs" />

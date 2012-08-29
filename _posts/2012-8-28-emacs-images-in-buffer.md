@@ -11,13 +11,14 @@ tags: [emacs]
 Building upon [compiling buffers](emacs-compile-on-save.html), I want to display images in the compiled output. Having recently seen [inline images in org-mode](http://floatsolutions.com/blog/2010/10/displaying-inline-images-in-emacs-org-mode/).
 
 So we first enable the mode (add to .emacs):
+
 ~~~
 (iimage-mode)
 ~~~
 
-or `M-x iimage-mode`. Now text that matches a regex in `iimage-mode-image-regex-alist' will be replaced with the actual image. By default this matches bare image filenames, and filenames within angle brackets (<>).
+or `M-x iimage-mode`. Now text that matches a regex in `iimage-mode-image-regex-alist` will be replaced with the actual image. By default this matches bare image filenames, and filenames within angle brackets (<>).
 
-Then we need to update images (which is not done on the fly) in a hook after compilation. The `compilation-finish-functions' appears to be the hook to use.
+Then we need to update images (which is not done on the fly) in a hook after compilation. The `compilation-finish-functions` appears to be the hook to use.
 
 ~~~
 (defun refresh-iimages ()
